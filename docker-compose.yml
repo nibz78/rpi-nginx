@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+
+ nginx:
+  container_name: nginx
+  image: rpi-nginx
+  restart: always
+  network_mode: "host"
+  ports:
+   - 80:80
+   - 443:443
+#  volumes:
+#   - /usr/share/nginx/www:/usr/share/nginx/www
+#   - /etc/nginx:/etc/nginx
+
